@@ -1,9 +1,11 @@
-let vegetableTypes, weeklySelection;
+let vegetableTypes, vegetableTree, weeklySelection;
 
 const resizeAndRender = () => {
     d3.selectAll("svg > *").remove();
 
     d3.selectAll("#temporal-visualization").style("height", "90vh").attr("width", 1.3 * document.getElementById("temporal-visualization").clientHeight)
+
+    d3.selectAll("#hierarchical-visualization").style("height", "90vh").attr("width", 1.4 * document.getElementById("temporal-visualization").clientHeight)
 
     renderVisualization();
 
@@ -204,31 +206,50 @@ const setupHierarchicalVisualization = () => {
     const containerHeight = document.getElementById("hierarchical-visualization").clientHeight;
 
     const margin = {
-        top: 0.1 * containerHeight,
-        right: 0 * containerWidth,
-        bottom: 0.18 * containerHeight,
-        left: 0.07 * containerWidth
+        top: 0.01 * containerHeight,
+        right: 0.01 * containerWidth,
+        bottom: 0.01 * containerHeight,
+        left: 0.05 * containerWidth
     };
 
     const width = containerWidth - (margin.right + margin.left);
     const height = containerHeight - (margin.top + margin.bottom);
 
-    const xScale = d3.scaleBand();
-    const yScale = d3.scaleBand();
-
     const svg = d3.select("#hierarchical-visualization");
+    const chart = svg.append("g")
+        .attr("transform", `translate(${margin.left}, ${margin.top})`)
+    
+    const transformedFamilyData = d3.hierarchy(vegetableTree);
+    const treeData = d3.tree().size([height, 0.95 * width])(transformedFamilyData);
 
-    svg.append('defs')
-        .append('clipPath')
-        .attr('id', 'chart-mask')
-        .append('rect')
-        .attr('width', width)
-        .attr('y', -margin.top)
-        .attr('height', containerHeight);
+    chart.selectAll('path')
+        .data(treeData.links())
+        .join('path')
+        .attr('class', 'edge')
+        .attr('d', d3.linkHorizontal()
+            .x(d => d.y)
+            .y(d => d.x))
+        .attr("fill", "none")
+        .attr("stroke", "#d6143f")
+        .attr("stroke-width", width * 0.0016)
+        .attr("opacity", 0.4);
+      
+    const node = chart.selectAll('g')
+        .data(treeData.descendants())
+        .join('g')
+        .attr('transform', d => `translate(${d.y},${d.x})`);
 
-    const chartArea = svg.append('g')
-        .attr("clip-path", "url(#chart-mask)")
-        .attr('transform', `translate(0,${margin.top})`);
+    node.append('circle')
+        .attr('class', 'node-circle')
+        .attr('r', 0.004 * width)
+        .attr("fill", "#344f1a");
+
+    node.append('text')
+        .attr('dy', '0.31em')
+        .attr('x', d => (d.children ? -0.008 : 0.008) * width)
+        .attr('text-anchor', d => d.children ? 'end' : 'start')
+        .attr("text-multiplier", 1)
+        .text(d => d.data.name);
 };
 
 const renderVisualization = () => {
@@ -238,6 +259,7 @@ const renderVisualization = () => {
 
 Promise.all([d3.json('data/vegetable-types.json'), d3.csv('data/weekly-selection.csv')]).then(([vegetableTypesData, weeklySelectionData]) => {
     vegetableTypes = vegetableTypesData;
+    vegetableTree = { name: "Plantae", children: [] };
     vegetableTypes.forEach(vegetableType => {
         if (!("isSubType" in vegetableType)) {
             vegetableType.isSubType = false;
@@ -253,6 +275,35 @@ Promise.all([d3.json('data/vegetable-types.json'), d3.csv('data/weekly-selection
                     subVegetableType.includeInTemporal = false;
                 }
             });
+        }
+
+        if ("classification" in vegetableType) {
+            const classification = [...vegetableType.classification.split(", "), vegetableType.display];
+            classification.shift();
+
+            const buildFamilyTree = (family, tree) => {
+                if (family.length === 0) {
+                    return tree;
+                }
+                
+                return { name: tree.name, children: buildFamilyTreeList(family, tree.children) }
+            };
+
+            const buildFamilyTreeList = (family, children) => {
+                if (children.length === 0) {
+                    const current = family.shift();
+                    return [buildFamilyTree(family, { name: current, children: [] })];
+                } else if (children[0].name === family[0]) {
+                    family.shift();
+                    const firstChild = children.shift();
+                    return [buildFamilyTree(family, firstChild), ...children];
+                } else {
+                    const firstChild = children.shift();
+                    return [firstChild, ...buildFamilyTreeList(family, children)];
+                }
+            };
+
+            vegetableTree = buildFamilyTree(classification, vegetableTree);
         }
     });
     
