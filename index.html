@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html style="height: 100vh;">
+    <head>
+        <title>CNH x FR CCHB</title>
+        <meta charset="UTF-8">
+        <link rel="icon" href="images/salad-mix.jpg" />
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body style="margin: 0; min-height: 100vh;">
+        <div class="column">
+            <h1 style="text-align: center; margin-bottom: 0;">Community Care Harvest Box</h1>
+            <h2 style="text-align: center; margin-bottom: 10px; margin-top: 0;">Collingwood Neighbourhood House x Fresh Roots</h1>
+            <div style="text-align: center;">
+                <p style="padding: 0; margin-top: 0;">Febraury 23, 2025</p>
+                <p style="padding-top: 0; margin-top: 0;">Mara Solen</p>
+            </div>
+            <p>
+                Since 2021, part of my Friday routine in the middle 5-6 months of the year has been going to <a href="https://www.cnh.bc.ca/">Collingwood Neighbourhood House</a> 
+                between 4 and 6 pm to pick up a box of vegetables provided by <a href="https://freshroots.ca/">Fresh Roots</a>. Starting in 2022,
+                the people running the program sent out emails describing what vegetables we'd be getting (other than week 3 of season 1 of 2022!).  
+
+            </p>
+            <h1 id="disclaimer" style="text-align: center; margin-bottom: 0; display: none;">
+                (the visualization below is best viewed on a wider screen)
+            </h1>
+        </div>
+        <div id="temporal-visualization-container" class="visualization-container" first-render="true">
+            <svg id="temporal-visualization" class="visualization"></svg>
+        </div>
+        <div class="column">
+            <p>
+                The vegetable varieties come from a variety of places around the world, but are all grown on farm plots at schools in Greater Vancouver. I've gotten a lot of 
+                vegetables that I'd never even heard of through this program, and a lot of varieties of more common vegetables that subverted my expectations!
+            </p>
+            <img src="images/haul.jpg" style="border-radius: 1em;">
+            <p style="text-align: center;">
+                A photo of my vegetable haul from July 19, 2024, which was week 8 of season 1 for that year! Yes, even the milk was part of the haul!
+            </p>
+        </div>
+        <div id="hierarchical-visualization-container" class="visualization-container">
+            <svg id="hierarchical-visualization" class="visualization"></svg>
+        </div>
+        <div class="column">
+            <p>
+                The weekly vegetable hauls were typically too much for one person, so I'd either freeze some items, cook then freeze some items, invite friends over to eat them 
+                with me, or give them to my friends. One of the reasons that there was always so much food was that there were almost always additional items (from sources other 
+                than Fresh Roots) that weren't mentioned in the emails, from vegetables and fruits like potatoes, carrots, and apples, to dairy products like milk, to baked goods 
+                like bread and desserts.
+            </p>
+            <img src="images/haul2.jpg" style="border-radius: 1em;">
+            <p style="text-align: center;">
+                A photo of my vegetable haul from September 20, 2024, which was week 7 of season 2 for that year! The apples here are an example of an item not mentioned in the email
+                but given out as part of the box.
+            </p>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js "></script>>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://unpkg.com/topojson@3"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

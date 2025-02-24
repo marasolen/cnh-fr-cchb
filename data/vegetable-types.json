@@ -1,0 +1,415 @@
+[
+    {
+        "name": "rhubarb",
+        "display": "Rhubarb",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Caryophyllales, Polygonaceae, Rheum"
+    },
+    {
+        "name": "garlic parts",
+        "display": "Garlic Parts",
+        "subtypes": [
+            "green garlic", "garlic scapes", "garlic"
+        ]
+    },
+    {
+        "name": "green garlic",
+        "display": "Green Garlic",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium"
+    },
+    {
+        "name": "garlic scapes",
+        "display": "Garlic Scapes",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium"
+    },
+    {
+        "name": "garlic",
+        "display": "Garlic",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium"
+    },
+    {
+        "name": "leafy greens",
+        "display": "Leafy Greens",
+        "subtypes": [
+            "salad mix", "mizuna", "scarlet frill", "arugula", "kale", "kale rapini", "tokyo bekana", "spinach", "chard", "sugarloaf chicory", "frisee", "purslane", "collard greens", "lettuce"
+        ]
+    },
+    {
+        "name": "salad mix",
+        "display": "Salad Mix"
+    },
+    {
+        "name": "mizuna",
+        "display": "Mizuna",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "scarlet frill",
+        "display": "Scarlet Frill",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "arugula",
+        "display": "Arugula",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Eruca"
+    },
+    {
+        "name": "kale",
+        "display": "Kale",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica",
+        "list": [
+            "kale", "purple kale", "baby kale"
+        ]
+    },
+    {
+        "name": "kale rapini",
+        "display": "Kale Rapini",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "tokyo bekana",
+        "display": "Tokyo Bekana",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "spinach",
+        "display": "Spinach",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Caryophyllales, Amaranthaceae, Spinacia",
+        "list": [
+            "spinach", "red spinach"
+        ]
+    },
+    {
+        "name": "chard",
+        "display": "Chard",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Caryophyllales, Amaranthaceae, Beta"
+    },
+    {
+        "name": "sugarloaf chicory",
+        "display": "Sugarloaf Chicory",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Asterales, Asteraceae, Chichorium"
+    },
+    {
+        "name": "frisee",
+        "display": "Frisée",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Asterales, Asteraceae, Chichorium"
+    },
+    {
+        "name": "purslane",
+        "display": "Purslane",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Caryophyllales, Portulacaceae, Portulaca"
+    },
+    {
+        "name": "collard greens",
+        "display": "Collard Greens",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "lettuce",
+        "display": "Lettuce",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Asterales, Asteraceae, Lactuca",
+        "list": [
+            "alkindus lettuce", "romaine lettuce", "lollo lettuce", "salanova lettuce", "mini lettuce", "butter lettuce", "lettuce"
+        ]
+    },
+    {
+        "name": "herbs and flowers",
+        "display": "Herbs and Flowers",
+        "subtypes": [
+            "mint", "chives", "marjoram", "lemon balm", "dill", "cilantro", "parsley", "basil", "oregano", "thyme", "sage", "lavender"
+        ]
+    },
+    {
+        "name": "mint",
+        "display": "Mint",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Nepotoideae, Mentheae, Mentha"
+    },
+    {
+        "name": "chives",
+        "display": "Chives",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium"
+    },
+    {
+        "name": "marjoram",
+        "display": "Marjoram",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Origanum"
+    },
+    {
+        "name": "lemon balm",
+        "display": "Lemon Balm",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Melissa"
+    },
+    {
+        "name": "dill",
+        "display": "Dill",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Anethum"
+    },
+    {
+        "name": "cilantro",
+        "display": "Cilantro",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Coriandrum"
+    },
+    {
+        "name": "parsley",
+        "display": "Parsley",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Petroselinum"
+    },
+    {
+        "name": "basil",
+        "display": "Basil",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Ocimum"
+    },
+    {
+        "name": "oregano",
+        "display": "Oregano",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Origanum"
+    },
+    {
+        "name": "thyme",
+        "display": "Thyme",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Nepotoideae, Mentheae, Thymus"
+    },
+    {
+        "name": "sage",
+        "display": "Sage",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Salvia"
+    },
+    {
+        "name": "lavender",
+        "display": "Lavender",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Lamiales, Lamiaceae, Nepotoideae, Ocimeae, Lavandula"
+    },
+    {
+        "name": "turnips",
+        "display": "Turnips",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica",
+        "subtypes": [
+            "salad turnip", "cooking turnip"
+        ]
+    },
+    {
+        "name": "salad turnip",
+        "display": "Salad Turnip",
+        "list": [
+            "hirosaki turnips", "hakurei turnips", "salad turnip"
+        ]
+    },
+    {
+        "name": "cooking turnip",
+        "display": "Cooking Turnip",
+        "list": [
+            "purple top turnips"
+        ]
+    },
+    {
+        "name": "parsnip",
+        "display": "Parsnip",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Pastinaca"
+    },
+    {
+        "name": "radishes",
+        "display": "Radishes",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Raphanus",
+        "subtypes": [
+            "radish", "daikon radish"
+        ]
+    },
+    {
+        "name": "radish",
+        "display": "Radish",
+        "list": [
+            "radishes", "crunchy king radish"
+        ]
+    },
+    {
+        "name": "daikon radish",
+        "display": "Daikon Radish",
+        "list": [
+            "daikon radish", "purple daikon"
+        ]
+    },
+    {
+        "name": "kohlrabi",
+        "display": "Kohlrabi",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "peas",
+        "display": "Peas",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Fabales, Fabaceae, Faboideae, Lathyrus",
+        "list": [
+            "peas", "snow peas", "sugar snap peas"
+        ]
+    },
+    {
+        "name": "carrot",
+        "display": "Carrot",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Daucus",
+        "list": [
+            "carrot", "baby carrots"
+        ]
+    },
+    {
+        "name": "potatoes",
+        "display": "Potatoes",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Solanales, Solanaceae, Solanum"
+    },
+    {
+        "name": "beet",
+        "display": "Beet",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Caryophyllales, Amaranthaceae, Beta"
+    },
+    {
+        "name": "rutabaga",
+        "display": "Rutabaga",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "broccoli",
+        "display": "Broccoli",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica",
+        "list": [
+            "broccoli", "purple sprouting broccoli"
+        ]
+    },
+    {
+        "name": "broccolini",
+        "display": "Broccolini",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "gai lan",
+        "display": "Gai Lan",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "bok choy",
+        "display": "Bok Choy",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "joi choi",
+        "display": "Joi Choi",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "tah tsai",
+        "display": "Tah Tsai",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica"
+    },
+    {
+        "name": "zucchini",
+        "display": "Zucchini",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Cucurbitales, Cucurbitaceae, Cucurbiteae, Cucurbita"
+    },
+    {
+        "name": "cucumber",
+        "display": "Cucumber",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Cucurbitales, Cucurbitaceae, Cucumis",
+        "list": [
+            "cucumber", "mini cucumbers"
+        ]
+    },
+    {
+        "name": "mini cucamelon",
+        "display": "Cucamelon",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Cucurbitales, Cucurbitaceae, Melothria"
+    },
+    {
+        "name": "fennel",
+        "display": "Fennel",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Foeniculum"
+    },
+    {
+        "name": "leek",
+        "display": "Leek",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium"
+    },
+    {
+        "name": "onions",
+        "display": "Onions",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Monocots, Asparagales, Amaryllidaceae, Allioideae, Allium",
+        "subtypes": [
+            "green onion", "onion", "red onion"
+        ]
+    },
+    {
+        "name": "green onion",
+        "display": "Green Onion"
+    },
+    {
+        "name": "onion",
+        "display": "Onion"
+    },
+    {
+        "name": "red onion",
+        "display": "Red Onion"
+    },
+    {
+        "name": "fava beans",
+        "display": "Fava Beans",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Fabales, Fabaceae, Faboideae, Fabeae, Vicia"
+    },
+    {
+        "name": "mixed beans",
+        "display": "Mixed Beans",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Fabales, Fabaceae, Faboideae, Phaseolus",
+        "list": [
+            "dragon bean", "green bean", "beans"
+        ]
+    },
+    {
+        "name": "cabbage",
+        "display": "Cabbage",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Brassicales, Brassicaceae, Brassica",
+        "list": [
+            "varaflex cabbage", "green cabbage", "cabbage"
+        ]
+    },
+    {
+        "name": "celery",
+        "display": "Celery",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Apiales, Apiaceae, Apioideae, Apieae, Apium"
+    },
+    {
+        "name": "pepper",
+        "display": "Pepper",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Solanales, Solanaceae, Capsicum",
+        "list": [
+            "jalapeno", "shishito", "hot pepper", "padron pepper", "bell pepper"
+        ]
+    },
+    {
+        "name": "tomatoes",
+        "display": "Tomatoes",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Solanales, Solanaceae, Solanum",
+        "subtypes": [
+            "tomato", "green tomato"
+        ]
+    },
+    {
+        "name": "tomato",
+        "display": "Tomato",
+        "list": [
+            "cherry tomato", "tasti-lee tomato", "tomato", "heirloom tomato"
+        ]
+    },
+    {
+        "name": "green tomato",
+        "display": "Green Tomato"
+    },
+    {
+        "name": "tomatillo",
+        "display": "Tomatillo",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Solanales, Solanaceae, Physalis"
+    },
+    {
+        "name": "eggplant",
+        "display": "Eggplant",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Asterids, Solanales, Solanaceae, Solanum, Leptostemonum"
+    },
+    {
+        "name": "squash",
+        "display": "Squash",
+        "classification": "Plantae, Tracheophytes, Angiosperms, Eudicots, Rosids, Cucurbitales, Cucurbitaceae, Cucurbiteae, Cucurbita"
+    }
+]
